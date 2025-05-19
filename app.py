@@ -6,6 +6,6 @@ app = Flask(__name__)
 def Home():
     return render_template("index.html")
 
-@app.route("/action")
+@app.route("/action",methods=["POST"])
 def Action():
     return
